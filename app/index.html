@@ -24,9 +24,13 @@
     </header>
 
     <section class="large-hero">
-      <div class="container">
+      <div class="container container--no-padding-until-large">
         <div class="large-hero__inner-container">
-          <img class="large-hero__image" src="assets/images/hero-medium.jpg" alt="Super Bunny Burger">
+          <picture class="large-hero__image-parent">
+            <source srcset="assets/images/hero-large.jpg 1399w" media="(min-width: 772px)">
+            <source srcset="assets/images/large-hero-medium.jpg 772w, assets/images/large-hero-medium-hi-dpi.jpg 1544w" media="(min-width: 375px)">
+            <img class="large-hero__image" srcset="assets/images/large-hero-small.jpg 375w, assets/images/large-hero-small-hi-dpi.jpg 744w" alt="Super Bunny Burger">
+          </picture>
           <div class="large-hero__container">
             <h1 class="large-hero__title">Hungry?</h1>
             <p class="large-hero__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero ratione ipsum excepturi tenetur eveniet. Commodi quam quo consequuntur doloribus.</p>

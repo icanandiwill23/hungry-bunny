@@ -1,7 +1,25 @@
 .large-hero{
 
   &__inner-container{
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @mixin atMedium{
+      display: block;
+      position: relative;
+    }
+  }
+
+  &__image-parent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order: 2;
+
+    @mixin atMedium{
+      display: block;
+    }
   }
 
   &__image{
@@ -10,12 +28,26 @@
   }
 
   &__container{
-    position: absolute;
-    left: 6.25rem;
-    bottom: 8.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order: 1;
+    align-items: center;
     background-color: rgba($lightGray, .45);
     padding: 50px 40px;
-    max-width: 25.75rem;
+
+    @mixin atMedium{
+      position: absolute;
+      display: block;
+      left: 1.125rem;
+      bottom: 5rem;
+      max-width: 25.75rem;
+    }
+
+    @mixin atLarge{
+      left: 6.25rem;
+      bottom: 8.25rem;
+    }
   }
 
   &__title{
@@ -32,6 +64,11 @@
     color: $darkGray;
     line-height: 1.2;
     margin-bottom: 1.8em;
+    text-align: center;
+
+    @mixin atMedium{
+      text-align: left;
+    }
   }
 
 }
