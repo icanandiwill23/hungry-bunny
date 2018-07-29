@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+img {
+  max-width: 100%;
 }

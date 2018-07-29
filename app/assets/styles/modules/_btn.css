@@ -1,0 +1,15 @@
+.btn--red{
+  background-color: $mainRed;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 50px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid $mainRed;
+  transition: all .5s linear;
+
+  &:hover{
+    background-color: #fff;
+    color: $mainRed;
+  }
+}

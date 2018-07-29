@@ -1,0 +1,37 @@
+.large-hero{
+
+  &__inner-container{
+    position: relative;
+  }
+
+  &__image{
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  &__container{
+    position: absolute;
+    left: 6.25rem;
+    bottom: 8.25rem;
+    background-color: rgba($lightGray, .45);
+    padding: 50px 40px;
+    max-width: 25.75rem;
+  }
+
+  &__title{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: $mainRed;
+  }
+
+  &__description{
+    margin-top: 0;
+    color: $darkGray;
+    line-height: 1.2;
+    margin-bottom: 1.8em;
+  }
+
+}
