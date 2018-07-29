@@ -1,0 +1,42 @@
+.primary-nav{
+
+  @mixin clearfix;
+
+  &--pull-right{
+    float: right;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    float: left;
+    margin-right: 20px;
+    padding: 10px 15px;
+    list-style: none;
+    transition: all .8s ease-out;
+    border-bottom: 1px solid transparent;
+
+    &.active{
+      border-bottom: 1px solid $mainYellow;
+    }
+
+    &:hover{
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  a{
+    display: inline-block;
+    text-decoration: none;
+    color: $mainYellow;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+      font-weight: bold;
+    }
+  }
+}

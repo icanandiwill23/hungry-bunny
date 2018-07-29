@@ -1,0 +1,17 @@
+.site-header{
+  position: absolute;
+  top: 0;
+  max-width: 1400px;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba($mainRed, .9);
+
+  &__logo{
+    float: left;
+
+    img{
+      height: 75px;
+      width: 75px;
+    }
+  }
+}
