@@ -1,9 +1,22 @@
 .primary-nav{
+  text-align: center;
+
+  @mixin atLarge{
+    display: block;
+  }
 
   @mixin clearfix;
 
   &--pull-right{
-    float: right;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @mixin atLarge{
+      float: right;
+    }
   }
 
   ul {
@@ -12,15 +25,24 @@
   }
 
   li {
-    float: left;
+    display: inline-block;
     margin-right: 20px;
     padding: 10px 15px;
+    margin-top: 15px;
     list-style: none;
     transition: all .8s ease-out;
     border-bottom: 1px solid transparent;
 
+    @mixin atLarge{
+      float: left;
+    }
+
     &.active{
       border-bottom: 1px solid $mainYellow;
+    }
+
+    &.active a{
+      color: $mainYellow;
     }
 
     &:hover{
@@ -31,12 +53,14 @@
   a{
     display: inline-block;
     text-decoration: none;
-    color: $mainYellow;
+    color: #fff;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
 
     &:hover{
       font-weight: bold;
+      color: $mainYellow;
     }
   }
+
 }

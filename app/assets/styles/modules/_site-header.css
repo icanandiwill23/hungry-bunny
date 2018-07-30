@@ -1,17 +1,78 @@
 .site-header{
   position: absolute;
-  top: 0;
-  max-width: 1400px;
   width: 100%;
   z-index: 5;
+  padding: 6px 0;
   background-color: rgba($mainRed, .9);
 
-  &__logo{
-    float: left;
+  @mixin atLarge{
+    display: block;
+    position: relative;
+    background-color: rgba($mainRed, .9);
+    width: 100%;
+    height: 84px;
+  }
 
-    img{
-      height: 75px;
-      width: 75px;
+  &__logo{
+    display: none;
+
+    @mixin atLarge{
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      background-color: #fff;
+      padding: 4px 15px;
+      margin-left: 6.25rem;
     }
+  }
+
+  &__mobile-logo{
+    background-color: #fff;
+    color: $mainRed;
+    display: inline-block;
+    margin-left: 18px;
+    padding: 1.2rem .7rem;
+
+    @mixin atLarge{
+      display: none;
+    }
+
+    &-title{
+      width: 160px;
+      font-family: 'Varela Round', sans-serif;
+      text-transform: uppercase;
+      border-left: 4px solid $mainRed;
+      margin: 0;
+      line-height: .9;
+      padding-left: .5rem;
+    }
+  }
+
+  &__menu-content{
+    display: none;
+  }
+
+  &__menu-icon{
+    position: absolute;
+    right: 18px;
+    top: 25px;
+    content: "";
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+
+    @mixin atLarge{
+      display: none;
+    }
+  }
+
+  &__image{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    background: url("../../assets/images/hb_logo.jpg") no-repeat left center;
+    background-size: cover;
+    background-attachment: scroll;
+    text-indent: -9999px;
   }
 }

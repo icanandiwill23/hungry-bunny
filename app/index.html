@@ -5,29 +5,44 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home - Hungry Bunny</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/fonts.min.css">
     <link rel="stylesheet" href="temp/styles/styles.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container container--no-padding-until-extra-large">
       <header class="site-header">
         <div class="site-header__logo">
-          <img src="assets/images/hb_logo.jpg" alt="Hungry Bunny Mascot">
+          <!-- <img class="site-header__image" src="assets/images/hb_logo.jpg" alt="Hungry Bunny Mascot"> -->
+          <div class="site-header__image">
           Hungry Bunny
+          </div>
         </div>
 
-        <ul class="primary-nav primary-nav--pull-right">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
-        </ul>
+        <div class="site-header__mobile-logo">
+          <h1 class="site-header__mobile-logo-title">Hungry Bunny</h1>
+        </div>
+
+        <div class="site-header__menu-icon">
+
+        </div>
+
+        <div class="site-header__menu-content">
+          <nav class="primary-nav primary-nav--pull-right">
+            <ul>
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
     </div>
 
     <section class="large-hero">
-      <div class="container container--no-padding-until-large">
+      <div class="container container--no-padding-until-extra-large">
         <div class="large-hero__inner-container">
           <picture class="large-hero__image-parent">
             <source srcset="assets/images/hero-large.jpg 1399w" media="(min-width: 772px)">

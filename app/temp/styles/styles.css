@@ -375,6 +375,19 @@ img {
   }
   }
 
+.container--no-padding-until-extra-large{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+@media (min-width: 1400px){
+
+.container--no-padding-until-extra-large{
+      padding-left: 18px;
+      padding-right: 18px
+  }
+  }
+
 .large-hero__inner-container{
     display: flex;
     flex-wrap: wrap;
@@ -414,8 +427,8 @@ img {
     flex-direction: column;
     order: 1;
     align-items: center;
-    background-color: rgba(232,234,239, .45);
     padding: 50px 40px;
+    padding-top: 130px;
   }
 
 @media (min-width: 768px){
@@ -432,8 +445,10 @@ img {
 @media (min-width: 992px){
 
 .large-hero__container{
+      background-color: rgba(232,234,239, .45);
       left: 6.25rem;
-      bottom: 8.25rem
+      bottom: 8.25rem;
+      padding-top: 50px
   }
   }
 
@@ -479,21 +494,107 @@ img {
 
 .site-header{
   position: absolute;
-  top: 0;
-  max-width: 1400px;
   width: 100%;
   z-index: 5;
+  padding: 6px 0;
   background-color: rgba(133,0,0, .9);
 }
 
-.site-header__logo{
-    float: left;
+@media (min-width: 992px){
+
+.site-header{
+    display: block;
+    position: relative;
+    background-color: rgba(133,0,0, .9);
+    width: 100%;
+    height: 84px
+}
   }
 
-.site-header__logo img{
-      height: 75px;
-      width: 75px;
+.site-header__logo{
+    display: none;
+  }
+
+@media (min-width: 992px){
+
+.site-header__logo{
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      background-color: #fff;
+      padding: 4px 15px;
+      margin-left: 6.25rem
+  }
+  }
+
+.site-header__mobile-logo{
+    background-color: #fff;
+    color: #850000;
+    display: inline-block;
+    margin-left: 18px;
+    padding: 1.2rem .7rem;
+  }
+
+@media (min-width: 992px){
+
+.site-header__mobile-logo{
+      display: none
+  }
+  }
+
+.site-header__mobile-logo-title{
+      width: 160px;
+      font-family: 'Varela Round', sans-serif;
+      text-transform: uppercase;
+      border-left: 4px solid #850000;
+      margin: 0;
+      line-height: .9;
+      padding-left: .5rem;
     }
+
+.site-header__menu-content{
+    display: none;
+  }
+
+.site-header__menu-icon{
+    position: absolute;
+    right: 18px;
+    top: 25px;
+    content: "";
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+  }
+
+@media (min-width: 992px){
+
+.site-header__menu-icon{
+      display: none
+  }
+  }
+
+.site-header__image{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    background: url("../../assets/images/hb_logo.jpg") no-repeat left center;
+    background-size: cover;
+    background-attachment: scroll;
+    text-indent: -9999px;
+  }
+
+.primary-nav{
+  text-align: center;
+
+}
+
+@media (min-width: 992px){
+
+.primary-nav{
+    display: block
+
+}
+  }
 
 .primary-nav::after{
     content: "";
@@ -502,7 +603,18 @@ img {
   }
 
 .primary-nav--pull-right{
-    float: right;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+@media (min-width: 992px){
+
+.primary-nav--pull-right{
+      float: right
+  }
   }
 
 .primary-nav ul {
@@ -511,16 +623,28 @@ img {
   }
 
 .primary-nav li {
-    float: left;
+    display: inline-block;
     margin-right: 20px;
     padding: 10px 15px;
+    margin-top: 15px;
     list-style: none;
     transition: all .8s ease-out;
     border-bottom: 1px solid transparent;
   }
 
+@media (min-width: 992px){
+
+.primary-nav li {
+      float: left
+  }
+  }
+
 .primary-nav li.active{
       border-bottom: 1px solid #fff300;
+    }
+
+.primary-nav li.active a{
+      color: #fff300;
     }
 
 .primary-nav li:hover{
@@ -530,11 +654,12 @@ img {
 .primary-nav a{
     display: inline-block;
     text-decoration: none;
-    color: #fff300;
+    color: #fff;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
   }
 
 .primary-nav a:hover{
       font-weight: bold;
+      color: #fff300;
     }

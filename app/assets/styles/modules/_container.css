@@ -15,4 +15,14 @@
       padding-right: 18px;
     }
   }
+
+  &--no-padding-until-extra-large{
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atExtraLarge{
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
 }
