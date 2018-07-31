@@ -1,6 +1,6 @@
 .btn--red{
   background-color: $mainRed;
-  color: #fff;
+  color: $mainYellow;
   text-decoration: none;
   padding: 15px 50px;
   display: inline-block;

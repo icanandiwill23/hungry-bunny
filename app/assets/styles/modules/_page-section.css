@@ -1,0 +1,9 @@
+.page-section{
+  padding: 4.5rem 0;
+
+  &--info-bg{
+    background: url("/assets/images/site-info-bg.jpg") no-repeat left center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

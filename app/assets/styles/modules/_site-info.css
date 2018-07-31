@@ -1,0 +1,69 @@
+.site-info{
+  max-width: 1436px;
+  margin: 0 auto;
+
+  &__inner{
+    background-color: $mainRed;
+    color: #fff;
+  }
+
+  &__logo{
+    position: relative;
+    padding-left: 90px;
+    @mixin clearfix;
+  }
+
+  &__image{
+    position: absolute;
+    left: 0;
+    top: -20px;
+    height: 79px;
+    width: 79px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &__comp-name{
+    font-size: 1.3rem;
+    width: 50px;
+  }
+
+  &__col-title{
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__col-title--center{
+    text-align: center;
+    margin-bottom: .5em;
+  }
+
+  &__description{
+    text-align: center;
+
+    p{
+      margin: .3rem 0;
+      font-family: proxima_nova_ltthin;
+    }
+  }
+
+  &__description--mt{
+    margin-top: 2.625rem;
+  }
+
+  &--narrow-p{
+    p.narrow{
+      width: 210px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__excerpt{
+    font-family: proxima_nova_ltthin;
+    margin-top: .2rem;
+    font-size: 1.1rem;
+  }
+
+}

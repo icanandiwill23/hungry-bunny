@@ -2,6 +2,7 @@
   text-align: center;
 
   @mixin atLarge{
+    padding-right: 6.25rem;
     display: block;
   }
 

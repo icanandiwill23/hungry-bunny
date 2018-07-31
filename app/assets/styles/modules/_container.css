@@ -1,8 +1,8 @@
 .container{
   overflow: hidden;
   max-width: 1436px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
   margin-left: auto;
   margin-right: auto;
 
@@ -19,10 +19,5 @@
   &--no-padding-until-extra-large{
     padding-left: 0;
     padding-right: 0;
-
-    @mixin atExtraLarge{
-      padding-left: 18px;
-      padding-right: 18px;
-    }
   }
 }

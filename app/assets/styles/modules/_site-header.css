@@ -49,7 +49,11 @@
   }
 
   &__menu-content{
-    display: none;
+    display: block;
+
+    @mixin atLarge{
+      display: block;
+    }
   }
 
   &__menu-icon{

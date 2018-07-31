@@ -1,0 +1,14 @@
+.social-icons{
+  padding-top: .7rem;
+  text-align: center;
+
+  &__icon{
+    margin: 0 3px;
+
+    i.fa{
+      color: #fff;
+    }
+
+  }
+
+}
