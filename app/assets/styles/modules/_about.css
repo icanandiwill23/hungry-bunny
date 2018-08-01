@@ -1,0 +1,8 @@
+.about{
+
+  &__image{
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+}

@@ -11,6 +11,10 @@
     font-size:  2rem;
   }
 
+  &--uppercase{
+    text-transform: uppercase;
+  }
+
   &--white{
     color: #fff;
   }

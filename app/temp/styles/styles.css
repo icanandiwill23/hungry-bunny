@@ -690,6 +690,10 @@ img {
 }
   }
 
+.section-title--uppercase{
+    text-transform: uppercase;
+  }
+
 .section-title--white{
     color: #fff;
   }
@@ -866,6 +870,10 @@ img {
   }
   }
 
+.row--tp-medium{
+    padding-top: 1rem;
+  }
+
 .row--tp-large{
     padding-top: 4rem;
   }
@@ -879,6 +887,16 @@ img {
 .row--bp-large{
       padding-bottom: 6rem
   }
+  }
+
+/* Gutters */
+
+.row--gutters {
+    margin-right: -52px;
+  }
+
+.row--gutters > div{
+    padding-right: 52px;
   }
 
 .row__sm-6{
@@ -913,9 +931,27 @@ img {
       float: left;
     }
 
+    .row__lg-4{
+      width: 33.33%;
+      float: left;
+    }
+
+    .row__lg-4-larger{
+      width: 37%;
+    }
+
     .row__lg-6{
       width: 50%;
       float: left;
+    }
+
+    .row__lg-8{
+      float: left;
+      width: 66.66%;
+    }
+
+    .row__lg-8-smaller{
+      width: 63%;
     }
   }
 
@@ -982,5 +1018,16 @@ img {
 .site-footer a{
     color: #fff;
     text-decoration: none;
+    font-family: proxima_nova_ltthin;
+  }
+
+.about__image{
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+.generic-content p {
+    font-size: 1.125rem;
+    line-height: 1.65;
     font-family: proxima_nova_ltthin;
   }
