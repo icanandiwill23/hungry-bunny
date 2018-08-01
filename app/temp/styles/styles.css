@@ -1021,13 +1021,45 @@ img {
     font-family: proxima_nova_ltthin;
   }
 
+.about{
+  padding-top: 8.7rem;
+
+}
+
+@media (min-width: 992px){
+
+.about{
+    padding-top: 4.5rem
+
+}
+  }
+
 .about__image{
     margin-top: 2.5rem;
     width: 100%;
+  }
+
+.about__image--mb{
+    margin-bottom: .6em;
+  }
+
+@media (min-width: 992px){
+
+.about__image--mb{
+      margin-bottom: 0
+  }
   }
 
 .generic-content p {
     font-size: 1.125rem;
     line-height: 1.65;
     font-family: proxima_nova_ltthin;
+    text-align: justify;
+  }
+
+@media (min-width: 992px){
+
+.generic-content p {
+      text-align: left
+  }
   }

@@ -1,8 +1,21 @@
 .about{
+  padding-top: 8.7rem;
+
+  @mixin atLarge{
+    padding-top: 4.5rem;
+  }
 
   &__image{
     margin-top: 2.5rem;
     width: 100%;
+  }
+
+  &__image--mb{
+    margin-bottom: .6em;
+
+    @mixin atLarge{
+      margin-bottom: 0;
+    }
   }
 
 }
