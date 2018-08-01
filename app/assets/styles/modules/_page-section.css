@@ -1,9 +1,17 @@
 .page-section{
-  padding: 4.5rem 0;
+  padding: 2rem 0;
+
+  @mixin atLarge{
+    padding: 4.5rem 0;
+  }
 
   &--info-bg{
-    background: url("/assets/images/site-info-bg.jpg") no-repeat left center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: linear-gradient(#730000 0%, #a60000 100%, #bf0019 100%);
+
+    @mixin atLarge{
+      background: url("/assets/images/site-info-bg.jpg") no-repeat left center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
   }
 }

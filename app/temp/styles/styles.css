@@ -356,11 +356,19 @@ img {
 .container{
   overflow: hidden;
   max-width: 1436px;
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
+  padding-left: 18px;
+  padding-right: 18px;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: 992px){
+
+.container{
+    padding-left: 6.25rem;
+    padding-right: 6.25rem
+}
+  }
 
 .container--no-padding-until-large{
     padding-left: 0;
@@ -546,7 +554,7 @@ img {
     }
 
 .site-header__menu-content{
-    display: block;
+    display: none;
   }
 
 @media (min-width: 992px){
@@ -666,7 +674,7 @@ img {
     }
 
 .section-title{
-  font-size:  2rem;
+  font-size:  1.69rem;
   font-weight: 300;
   text-align: center;
   padding: 0;
@@ -675,31 +683,60 @@ img {
   color: #850000;
 }
 
+@media (min-width: 992px){
+
+.section-title{
+    font-size:  2rem
+}
+  }
+
 .section-title--white{
     color: #fff;
   }
 
 .section-title__subtitle{
-    font-size: 1.7rem;
+    font-size: 1.11rem;
     font-weight: 300;
     text-align: center;
     padding: 0;
     margin: 0;
   }
 
+@media (min-width: 992px){
+
+.section-title__subtitle{
+      font-size: 1.7rem
+  }
+  }
+
 .page-section{
-  padding: 4.5rem 0;
+  padding: 2rem 0;
 }
 
+@media (min-width: 992px){
+
+.page-section{
+    padding: 4.5rem 0
+}
+  }
+
 .page-section--info-bg{
-    background: url("/assets/images/site-info-bg.jpg") no-repeat left center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: linear-gradient(#730000 0%, #a60000 100%, #bf0019 100%);
+  }
+
+@media (min-width: 992px){
+
+.page-section--info-bg{
+      background: url("/assets/images/site-info-bg.jpg") no-repeat left center;
+      background-attachment: fixed;
+      background-size: cover
+  }
   }
 
 .site-info{
   max-width: 1436px;
   margin: 0 auto;
+  position: relative;
 
 }
 
@@ -709,8 +746,20 @@ img {
   }
 
 .site-info__logo{
-    position: relative;
-    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+@media (min-width: 992px){
+
+.site-info__logo{
+      display: block;
+      position: relative;
+      padding-left: 90px;
+  }
   }
 
 .site-info__logo::after{
@@ -720,18 +769,39 @@ img {
   }
 
 .site-info__image{
-    position: absolute;
-    left: 0;
-    top: -20px;
+    display: flex;
+    margin-top: .7rem;
+    flex-basis: 10px;
     height: 79px;
     width: 79px;
     border-radius: 50%;
     background-color: transparent;
   }
 
+@media (min-width: 992px){
+
+.site-info__image{
+      position: absolute;
+      left: 0;
+      top: -20px;
+      margin-top: 0
+  }
+  }
+
 .site-info__comp-name{
+    display: flex;
     font-size: 1.3rem;
-    width: 50px;
+    margin-top: .5em;
+    text-align: center;
+  }
+
+@media (min-width: 992px){
+
+.site-info__comp-name{
+      display: block;
+      width: 50px;
+      margin-top: 1.2rem
+  }
   }
 
 .site-info__col-title{
@@ -758,16 +828,42 @@ img {
     margin-top: 2.625rem;
   }
 
+.site-info--mt-until-large{
+    margin-top: 1.5rem;
+  }
+
+@media (min-width: 992px){
+
+.site-info--mt-until-large{
+      margin-top: 0
+  }
+  }
+
 .site-info--narrow-p p.narrow{
       width: 210px;
       margin-right: auto;
       margin-left: auto;
     }
 
+@media (min-width: 992px){
+
+.site-info--narrow-p p.narrow{
+        width: 167px
+    }
+  }
+
 .site-info__excerpt{
     font-family: proxima_nova_ltthin;
     margin-top: .2rem;
     font-size: 1.1rem;
+    text-align: justify;
+  }
+
+@media (min-width: 992px){
+
+.site-info__excerpt{
+      text-align: left
+  }
   }
 
 .row--tp-large{
@@ -775,13 +871,40 @@ img {
   }
 
 .row--bp-large{
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
+  }
+
+@media (min-width: 992px){
+
+.row--bp-large{
+      padding-bottom: 6rem
+  }
+  }
+
+.row__sm-6{
+    float: left;
+    width: 50%;
+  }
+
+@media (min-width: 768px){
+
+.row__sm-6{
+      float: none;
+      width: auto
+  }
   }
 
 .row::after{
     content: "";
     clear: both;
     display: table;
+  }
+
+@media (min-width: 768px){
+    .row__sm-6{
+      float: left;
+      width: 50%;
+    }
   }
 
 @media (min-width: 992px){

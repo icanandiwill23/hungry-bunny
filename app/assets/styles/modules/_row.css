@@ -5,10 +5,31 @@
   }
 
   &--bp-large{
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
+
+    @mixin atLarge{
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__sm-6{
+    float: left;
+    width: 50%;
+
+    @mixin atMedium{
+      float: none;
+      width: auto;
+    }
   }
 
   @mixin clearfix;
+
+  @mixin atMedium{
+    &__sm-6{
+      float: left;
+      width: 50%;
+    }
+  }
 
   @mixin atLarge{
     &__lg-3{

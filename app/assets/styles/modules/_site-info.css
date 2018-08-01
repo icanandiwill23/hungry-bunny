@@ -1,6 +1,7 @@
 .site-info{
   max-width: 1436px;
   margin: 0 auto;
+  position: relative;
 
   &__inner{
     background-color: $mainRed;
@@ -8,24 +9,48 @@
   }
 
   &__logo{
-    position: relative;
-    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @mixin atLarge{
+      display: block;
+      position: relative;
+      padding-left: 90px;
+    }
     @mixin clearfix;
   }
 
   &__image{
-    position: absolute;
-    left: 0;
-    top: -20px;
+    display: flex;
+    margin-top: .7rem;
+    flex-basis: 10px;
     height: 79px;
     width: 79px;
     border-radius: 50%;
     background-color: transparent;
+
+    @mixin atLarge{
+      position: absolute;
+      left: 0;
+      top: -20px;
+      margin-top: 0;
+    }
   }
 
   &__comp-name{
+    display: flex;
     font-size: 1.3rem;
-    width: 50px;
+    margin-top: .5em;
+    text-align: center;
+
+    @mixin atLarge{
+      display: block;
+      width: 50px;
+      margin-top: 1.2rem;
+    }
   }
 
   &__col-title{
@@ -52,11 +77,23 @@
     margin-top: 2.625rem;
   }
 
+  &--mt-until-large{
+    margin-top: 1.5rem;
+
+    @mixin atLarge{
+      margin-top: 0;
+    }
+  }
+
   &--narrow-p{
     p.narrow{
       width: 210px;
       margin-right: auto;
       margin-left: auto;
+
+      @mixin atLarge{
+        width: 167px;
+      }
     }
   }
 
@@ -64,6 +101,11 @@
     font-family: proxima_nova_ltthin;
     margin-top: .2rem;
     font-size: 1.1rem;
+    text-align: justify;
+
+    @mixin atLarge{
+      text-align: left;
+    }
   }
 
 }

@@ -1,5 +1,5 @@
 .section-title{
-  font-size:  2rem;
+  font-size:  1.69rem;
   font-weight: 300;
   text-align: center;
   padding: 0;
@@ -7,15 +7,23 @@
   margin-bottom: .5rem;
   color: $mainRed;
 
+  @mixin atLarge{
+    font-size:  2rem;
+  }
+
   &--white{
     color: #fff;
   }
 
   &__subtitle{
-    font-size: 1.7rem;
+    font-size: 1.11rem;
     font-weight: 300;
     text-align: center;
     padding: 0;
     margin: 0;
+
+    @mixin atLarge{
+      font-size: 1.7rem;
+    }
   }
 }
