@@ -20,7 +20,6 @@
       display: inline-block;
       position: absolute;
       top: 0;
-      background-color: #fff;
       padding: 4px 15px;
       margin-left: 6.25rem;
     }
@@ -28,6 +27,7 @@
 
   &__mobile-logo{
     background-color: #fff;
+    border-radius: 5px;
     color: $mainRed;
     display: inline-block;
     margin-left: 18px;

@@ -525,6 +525,16 @@ img {
     color: #850000;
   }
 
+.btn--pull-right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btn--larger{
+  font-size: 1.25rem;
+}
+
 .site-header{
   position: absolute;
   width: 100%;
@@ -554,7 +564,6 @@ img {
       display: inline-block;
       position: absolute;
       top: 0;
-      background-color: #fff;
       padding: 4px 15px;
       margin-left: 6.25rem
   }
@@ -562,6 +571,7 @@ img {
 
 .site-header__mobile-logo{
     background-color: #fff;
+    border-radius: 5px;
     color: #850000;
     display: inline-block;
     margin-left: 18px;
@@ -742,6 +752,10 @@ img {
   }
   }
 
+.section-title__subtitle--red{
+    color: #850000;
+  }
+
 .section-title--white{
     color: #fff;
   }
@@ -788,6 +802,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    color: #fff;
   }
 
 @media (min-width: 992px){
@@ -1256,4 +1271,53 @@ img {
 .news--padding{
       padding: 5.5rem 0 0 0
   }
+  }
+
+.menu__content{
+    padding: 52px 0 90px 0;
+    position: relative;
+  }
+
+.menu-item{
+  display: inline-block;
+  border: 1px solid #e8eaef;
+  position: relative;
+  width: 290px;
+}
+
+.menu-item__image > img {
+      width: 100%;
+    }
+
+.menu-item__text{
+    background-color: #e8eaef;
+    padding: 25px 23px;
+    position: relative;
+  }
+
+.menu-item__title{
+    font-size: 1.25rem;
+    display: inline-block;
+    margin: 0;
+    padding-right: 72px;
+  }
+
+.menu-item__price{
+    padding: 7px 14px;
+    margin: 0;
+    /* display: inline-block; */
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    color: #fff300;
+    font-size: 1.5rem;
+    background-color: #730000;
+    border-radius: 7px;
+  }
+
+.menu-item__currency{
+    font-size: 1rem;
+    font-family: proxima_nova_ltthin;
   }

@@ -28,6 +28,10 @@
     }
   }
 
+  &__subtitle--red{
+    color: $mainRed;
+  }
+
   &--white{
     color: #fff;
   }
