@@ -1,5 +1,9 @@
 .form{
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
+
+  @mixin atLarge{
+    padding-bottom: 4rem;
+  }
 
   &__input{
     width: 100%;

@@ -1,7 +1,12 @@
 .contact-us{
+  padding-top: 8.7rem;
   background-color: rgba($lighterGray, .5);
   max-width: 1437px;
   margin: 0 auto;
+
+  @mixin atLarge{
+    padding-top: 4.5rem;
+  }
 
   &__title{
     font-weight: 400;

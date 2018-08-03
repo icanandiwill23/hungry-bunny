@@ -1526,10 +1526,18 @@ img {
       }
 
 .contact-us{
+  padding-top: 8.7rem;
   background-color: rgba(245,245,245, .5);
   max-width: 1437px;
   margin: 0 auto;
 }
+
+@media (min-width: 992px){
+
+.contact-us{
+    padding-top: 4.5rem
+}
+  }
 
 .contact-us__title{
     font-weight: 400;
@@ -1565,8 +1573,15 @@ img {
   }
 
 .form{
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
+
+@media (min-width: 992px){
+
+.form{
+    padding-bottom: 4rem
+}
+  }
 
 .form__input{
     width: 100%;
