@@ -12,6 +12,7 @@
   @mixin clearfix;
 
   &__body{
+    background-color: #fff;
     float: left;
     width: 60%;
     padding: 1rem 1rem;

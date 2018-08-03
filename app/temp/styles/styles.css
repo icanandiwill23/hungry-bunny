@@ -509,6 +509,20 @@ img {
     border: 1px solid #850000;
   }
 
+.btn--send{
+  color: #850000;
+  border: 1px solid #850000;
+  padding: 13px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+.btn--send:hover{
+    background-color: #850000;
+    color: #fff;
+  }
+
 .btn--red{
   background-color: #850000;
   color: #fff300;
@@ -1117,6 +1131,9 @@ img {
 
 .about{
   padding-top: 8.7rem;
+  background-color: rgba(245,245,245, .5);
+  max-width: 1437px;
+  margin: 0 auto;
 
 }
 
@@ -1182,6 +1199,7 @@ img {
   }
 
 .cards__body{
+    background-color: #fff;
     float: left;
     width: 60%;
     padding: 1rem 1rem;
@@ -1295,6 +1313,13 @@ img {
       color: #333;
     }
 
+.news{
+  background-color: rgba(245,245,245, .5);
+  max-width: 1436px;
+  margin: 0 auto;
+
+}
+
 .news--padding{
     padding: 2.5rem 0 0 0;
   }
@@ -1305,6 +1330,13 @@ img {
       padding: 5.5rem 0 0 0
   }
   }
+
+.menu{
+  background-color: rgba(245,245,245, .5);
+  max-width: 1437px;
+  margin: 0 auto;
+
+}
 
 .menu__content{
     padding: 52px 0 90px 0;
@@ -1492,3 +1524,80 @@ img {
         left: 0;
         color: #850000;
       }
+
+.contact-us{
+  background-color: rgba(245,245,245, .5);
+  max-width: 1437px;
+  margin: 0 auto;
+}
+
+.contact-us__title{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+.contact-us__items{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+.contact-us__items-franchise{
+    width: 143px;
+  }
+
+.contact-us__items-title{
+
+  }
+
+.contact-us__text{
+    font-family: "proxima_nova_ltthin", sans-serif;
+  }
+
+.contact-us__email-text{
+    font-family: "proxima_nova_ltthin", sans-serif;
+    margin: 0;
+  }
+
+.contact-us__email{
+    margin: 0;
+    color: #850000;
+  }
+
+.form{
+  padding-bottom: 4rem;
+}
+
+.form__input{
+    width: 100%;
+    padding: 17px 13px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    background: #fff;
+    outline: none;
+    border: 1px solid #ccc;
+  }
+
+.form__textarea{
+    width: 100%;
+    padding: 17px 13px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-bottom: 30px;
+  }
+
+.form__send{
+    text-align: right;
+    margin-bottom: 30px;
+  }
+
+.form--relative{
+    position: relative;
+  }
+
+.form__feedback{
+    display: none;
+    text-align: right;
+  }

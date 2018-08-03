@@ -1,0 +1,37 @@
+.form{
+  padding-bottom: 4rem;
+
+  &__input{
+    width: 100%;
+    padding: 17px 13px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    background: #fff;
+    outline: none;
+    border: 1px solid #ccc;
+  }
+
+  &__textarea{
+    width: 100%;
+    padding: 17px 13px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-bottom: 30px;
+  }
+
+  &__send{
+    text-align: right;
+    margin-bottom: 30px;
+  }
+
+  &--relative{
+    position: relative;
+  }
+
+  &__feedback{
+    display: none;
+    text-align: right;
+  }
+}

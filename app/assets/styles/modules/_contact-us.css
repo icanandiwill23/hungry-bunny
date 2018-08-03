@@ -1,0 +1,38 @@
+.contact-us{
+  background-color: rgba($lighterGray, .5);
+  max-width: 1437px;
+  margin: 0 auto;
+
+  &__title{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  &__items{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &__items-franchise{
+    width: 143px;
+  }
+
+  &__items-title{
+
+  }
+
+  &__text{
+    font-family: "proxima_nova_ltthin", sans-serif;
+  }
+
+  &__email-text{
+    font-family: "proxima_nova_ltthin", sans-serif;
+    margin: 0;
+  }
+
+  &__email{
+    margin: 0;
+    color: $mainRed;
+  }
+}

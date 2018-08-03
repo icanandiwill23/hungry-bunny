@@ -1,4 +1,7 @@
 .news{
+  background-color: rgba($lighterGray, .5);
+  max-width: 1436px;
+  margin: 0 auto;
 
   &--padding{
     padding: 2.5rem 0 0 0;

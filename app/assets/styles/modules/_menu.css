@@ -1,4 +1,7 @@
 .menu{
+  background-color: rgba($lighterGray, .5);
+  max-width: 1437px;
+  margin: 0 auto;
 
   &__content{
     padding: 52px 0 90px 0;

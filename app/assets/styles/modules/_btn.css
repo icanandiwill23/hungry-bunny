@@ -27,6 +27,20 @@
   }
 }
 
+.btn--send{
+  color: $mainRed;
+  border: 1px solid $mainRed;
+  padding: 13px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all .3s ease-out;
+
+  &:hover{
+    background-color: $mainRed;
+    color: #fff;
+  }
+}
+
 .btn--red{
   background-color: $mainRed;
   color: $mainYellow;
