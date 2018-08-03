@@ -15,19 +15,20 @@
     text-transform: uppercase;
   }
 
-  &--white{
-    color: #fff;
-  }
-
   &__subtitle{
     font-size: 1.11rem;
     font-weight: 300;
     text-align: center;
     padding: 0;
     margin: 0;
+    color: $darkGray;
 
     @mixin atLarge{
       font-size: 1.7rem;
     }
+  }
+
+  &--white{
+    color: #fff;
   }
 }

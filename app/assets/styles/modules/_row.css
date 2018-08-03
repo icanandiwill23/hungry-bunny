@@ -17,6 +17,14 @@
   }
 
   /* Gutters */
+  &--gutters-small {
+    margin-right: -24px;;
+  }
+
+  &--gutters-small > div{
+    padding-right: 24px;
+  }
+
   &--gutters {
     margin-right: -52px;
   }
