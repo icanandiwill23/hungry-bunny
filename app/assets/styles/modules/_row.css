@@ -8,6 +8,10 @@
     padding-top: 4rem;
   }
 
+  &--tp-larger{
+    padding-top: 5.625rem;
+  }
+
   &--bp-large{
     padding-bottom: 2rem;
 
@@ -31,6 +35,14 @@
 
   &--gutters > div{
     padding-right: 52px;
+  }
+
+  &--gutters-large{
+    margin-right: -85px;
+  }
+
+  &--gutters-large > div{
+    padding-right: 85px;
   }
 
   &__sm-6{

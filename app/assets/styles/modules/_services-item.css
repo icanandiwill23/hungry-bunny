@@ -1,0 +1,97 @@
+.services-item{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  border-top: 4px solid $mainYellow;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  &--adjust-top{
+    margin-top: -1.625rem;
+  }
+
+  &__header{
+    background: url("/assets/images/services-header-bg.jpg") top left no-repeat;
+    background-size: cover;
+    height: 13rem;
+    position: relative;
+  }
+
+  &__title{
+    margin: 0;
+    padding: 27px;
+    padding-top: 3rem;
+    color: $mainYellow;
+    padding-left: 74px;
+    font-weight: 400;
+
+    & .fa{
+      position: absolute;
+      left: 27px;
+    }
+  }
+
+  &__body{
+    background-color: #fff;
+    padding: 0 27px 16px 27px;
+  }
+
+  &__call{
+    margin: 0;
+    margin-top: -1px;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: $mainRed;
+    text-align: center;
+    letter-spacing: .7px;
+    font-family: "proxima_nova_ltthin", sans-serif;
+  }
+
+  &__number{
+    text-align: center;
+    color: $mainRed;
+    font-size: 1.25rem;
+    border-bottom: 1px solid $lightGray;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: .5em;
+  }
+
+  &__text{
+    font-size: 1.125rem;
+    font-family: "proxima_nova_ltthin", sans-serif;
+  }
+
+  &__divider{
+    background-color: $grayNews;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  &__footer{
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    ul{
+      margin: 0;
+      padding: 1.375rem 1.6875rem;
+    }
+
+    li{
+      list-style: none;
+      font-size: 1.125rem;
+      font-family: "proxima_nova_ltthin", sans-serif;
+      padding-left: 28px;
+      position: relative;
+
+      & .fa{
+        position: absolute;
+        left: 0;
+        color: $mainRed;
+      }
+    }
+  }
+}

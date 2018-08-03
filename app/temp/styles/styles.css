@@ -784,6 +784,20 @@ img {
   }
   }
 
+.page-section--services-bg{
+    background: linear-gradient(#730000 0%, #a60000 100%, #bf0019 100%);
+    max-width: 1436px;
+    margin: 0 auto;
+  }
+
+@media (min-width: 992px){
+
+.page-section--services-bg{
+      background: url("/assets/images/service-bg.jpg") no-repeat left center;
+      background-size: cover
+  }
+  }
+
 .site-info{
   max-width: 1436px;
   margin: 0 auto;
@@ -926,6 +940,10 @@ img {
     padding-top: 4rem;
   }
 
+.row--tp-larger{
+    padding-top: 5.625rem;
+  }
+
 .row--bp-large{
     padding-bottom: 2rem;
   }
@@ -953,6 +971,14 @@ img {
 
 .row--gutters > div{
     padding-right: 52px;
+  }
+
+.row--gutters-large{
+    margin-right: -85px;
+  }
+
+.row--gutters-large > div{
+    padding-right: 85px;
   }
 
 .row__sm-6{
@@ -1321,3 +1347,101 @@ img {
     font-size: 1rem;
     font-family: proxima_nova_ltthin;
   }
+
+.services-item{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  border-top: 4px solid #fff300;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.services-item--adjust-top{
+    margin-top: -1.625rem;
+  }
+
+.services-item__header{
+    background: url("/assets/images/services-header-bg.jpg") top left no-repeat;
+    background-size: cover;
+    height: 13rem;
+    position: relative;
+  }
+
+.services-item__title{
+    margin: 0;
+    padding: 27px;
+    padding-top: 3rem;
+    color: #fff300;
+    padding-left: 74px;
+    font-weight: 400;
+  }
+
+.services-item__title .fa{
+      position: absolute;
+      left: 27px;
+    }
+
+.services-item__body{
+    background-color: #fff;
+    padding: 0 27px 16px 27px;
+  }
+
+.services-item__call{
+    margin: 0;
+    margin-top: -1px;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #850000;
+    text-align: center;
+    letter-spacing: .7px;
+    font-family: "proxima_nova_ltthin", sans-serif;
+  }
+
+.services-item__number{
+    text-align: center;
+    color: #850000;
+    font-size: 1.25rem;
+    border-bottom: 1px solid #e8eaef;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: .5em;
+  }
+
+.services-item__text{
+    font-size: 1.125rem;
+    font-family: "proxima_nova_ltthin", sans-serif;
+  }
+
+.services-item__divider{
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+.services-item__footer{
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+.services-item__footer ul{
+      margin: 0;
+      padding: 1.375rem 1.6875rem;
+    }
+
+.services-item__footer li{
+      list-style: none;
+      font-size: 1.125rem;
+      font-family: "proxima_nova_ltthin", sans-serif;
+      padding-left: 28px;
+      position: relative;
+    }
+
+.services-item__footer li .fa{
+        position: absolute;
+        left: 0;
+        color: #850000;
+      }

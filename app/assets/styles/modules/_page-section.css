@@ -14,4 +14,15 @@
       background-size: cover;
     }
   }
+
+  &--services-bg{
+    background: linear-gradient(#730000 0%, #a60000 100%, #bf0019 100%);
+    max-width: 1436px;
+    margin: 0 auto;
+
+    @mixin atLarge{
+      background: url("/assets/images/service-bg.jpg") no-repeat left center;
+      background-size: cover;
+    }
+  }
 }
