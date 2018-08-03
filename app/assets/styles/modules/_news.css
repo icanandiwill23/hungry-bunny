@@ -1,7 +1,11 @@
 .news{
 
   &--padding{
-    padding: 5.5rem 0;
+    padding: 2.5rem 0 0 0;
+
+    @mixin atLarge{
+      padding: 5.5rem 0 0 0;
+    }
   }
 
 }

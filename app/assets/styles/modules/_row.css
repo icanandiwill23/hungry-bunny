@@ -50,6 +50,11 @@
       float: left;
       width: 50%;
     }
+
+    &__md-6{
+      float: left;
+      width: 50%;
+    }
   }
 
   @mixin atLarge{

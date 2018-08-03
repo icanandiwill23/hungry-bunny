@@ -1,21 +1,47 @@
 .cards{
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 2.625rem;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+
+  @mixin atLarge{
+    margin-bottom: 2.625rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+  }
 
   @mixin clearfix;
 
   &__body{
     float: left;
     width: 60%;
-    padding: 2rem 1.8125rem;
-    height: 19.88rem;
+    padding: 1rem 1rem;
+    height: 15.88rem;
 
-    p{
-      font-family: proxima_nova_ltthin;
+    @mixin atLarge{
+      height: 19.88rem;
+    }
+
+    @mixin atLarge{
+      padding: 2rem 1.8125rem;
+    }
+
+  }
+
+  &__title{
+    font-size: 1.2rem;
+
+    @mixin atLarge{
+      font-size: 1.5rem;
+    }
+  }
+
+  &__text{
+    font-family: proxima_nova_ltthin;
+    font-size: 1rem;
+    line-height: 1.25;
+
+    @mixin atLarge{
       font-size: 1.125rem;
-      line-height: 1.25;
     }
   }
 
@@ -27,7 +53,11 @@
     & > img{
       width: 100%;
       vertical-align: middle;
-      height: 19.88rem;
+      height: 15.88rem;
+
+      @mixin atLarge{
+        height: 19.88rem;
+      }
     }
   }
 
@@ -35,17 +65,26 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    height: 74px;
-    width: 74px;
+    height: 64px;
+    width: 64px;
     background-color: #fff;
     border-radius: 50%;
     overflow: hidden;
     text-align: center;
     transition: all .3s ease-out;
 
+    @mixin atLarge{
+      height: 74px;
+      width: 74px;
+    }
+
     h2{
       padding: 0;
-      margin: 1rem 0 0 0;
+      margin: .6rem 0 0 0;
+
+      @mixin atLarge{
+        margin: 1rem 0 0 0;
+      }
     }
 
     p{

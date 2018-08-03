@@ -1,13 +1,17 @@
 .btn--link{
   color: $mainRed;
   display: inline-block;
-  margin-top: 28px;
+  margin-top: 0;
   padding: 13px 17px;
   border-radius: 10px;
   text-decoration: none;
   position: relative;
   border: 1px solid transparent;
   transition: all .3s ease-out;
+
+  @mixin atLarge{
+    margin-top: 28px;
+  }
 
   &:after{
     content: '';
