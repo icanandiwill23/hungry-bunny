@@ -9,7 +9,11 @@
   }
 
   &--tp-larger{
-    padding-top: 5.625rem;
+    padding-top: 2rem;
+
+    @mixin atLarge{
+      padding-top: 5.625rem;
+    }
   }
 
   &--bp-large{

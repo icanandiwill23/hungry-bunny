@@ -1,18 +1,46 @@
+.services{
+  padding-top: 8.7rem;
+
+  @mixin atLarge{
+    padding-top: 4.5rem;
+  }
+}
+
 .services-item{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   border-top: 4px solid $mainYellow;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  margin-bottom: 3rem;
+
+  &--last{
+    margin-bottom: 0;
+  }
+
+  @mixin atLarge{
+    margin-bottom: 0;
+  }
 
   &--adjust-top{
-    margin-top: -1.625rem;
+
+    @mixin atLarge{
+      margin-top: -1.625rem;
+    }
   }
 
   &__header{
     background: url("/assets/images/services-header-bg.jpg") top left no-repeat;
     background-size: cover;
-    height: 13rem;
+    height: 11rem;
     position: relative;
+
+    @mixin atMedium{
+      height: 8rem;
+    }
+
+    @mixin atLarge{
+      height: 15rem;
+    }
   }
 
   &__title{
