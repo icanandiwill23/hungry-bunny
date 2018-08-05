@@ -74,6 +74,18 @@
   }
 
   @mixin atLarge{
+    &--equal-height-on-large{
+      display: flex;
+
+      & > div{
+        display: flex;
+      }
+    }
+
+    .row__lg-4.row--no-flex{
+      display: block;
+    }
+
     &__lg-3{
       width: 25%;
       float: left;

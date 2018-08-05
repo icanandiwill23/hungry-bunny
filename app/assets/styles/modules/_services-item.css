@@ -7,6 +7,9 @@
 }
 
 .services-item{
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   border-top: 4px solid $mainYellow;
   border-top-left-radius: 5px;
@@ -29,6 +32,7 @@
   }
 
   &__header{
+    text-align: center;
     background: url("/assets/images/services-header-bg.jpg") top left no-repeat;
     background-size: cover;
     height: 11rem;
@@ -48,18 +52,19 @@
     padding: 27px;
     padding-top: 3rem;
     color: $mainYellow;
-    padding-left: 74px;
     font-weight: 400;
 
     & .fa{
-      position: absolute;
-      left: 27px;
+      position: relative;
+      top: 9px;
+      padding-right: 2px;
     }
   }
 
   &__body{
     background-color: #fff;
     padding: 0 27px 16px 27px;
+
   }
 
   &__call{

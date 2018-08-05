@@ -756,7 +756,6 @@ img {
     text-align: center;
     padding: 0;
     margin: 0;
-    color: #3d3d3d;
   }
 
 @media (min-width: 992px){
@@ -1034,6 +1033,18 @@ img {
   }
 
 @media (min-width: 992px){
+    .row--equal-height-on-large{
+      display: flex;
+    }
+
+      .row--equal-height-on-large > div{
+        display: flex;
+      }
+
+    .row .row__lg-4.row--no-flex{
+      display: block;
+    }
+
     .row__lg-3{
       width: 25%;
       float: left;
@@ -1399,6 +1410,9 @@ img {
   }
 
 .services-item{
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   border-top: 4px solid #fff300;
   border-top-left-radius: 5px;
@@ -1425,6 +1439,7 @@ img {
   }
 
 .services-item__header{
+    text-align: center;
     background: url("/assets/images/services-header-bg.jpg") top left no-repeat;
     background-size: cover;
     height: 11rem;
@@ -1450,18 +1465,19 @@ img {
     padding: 27px;
     padding-top: 3rem;
     color: #fff300;
-    padding-left: 74px;
     font-weight: 400;
   }
 
 .services-item__title .fa{
-      position: absolute;
-      left: 27px;
+      position: relative;
+      top: 9px;
+      padding-right: 2px;
     }
 
 .services-item__body{
     background-color: #fff;
     padding: 0 27px 16px 27px;
+
   }
 
 .services-item__call{
