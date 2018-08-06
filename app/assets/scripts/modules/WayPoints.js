@@ -2,8 +2,9 @@ import $ from "jquery";
 import waypoints from "../../../../node_modules/waypoints/lib/noframework.waypoints.min";
 
 class WayPoints{
-  constructor(){
-    this.cards = $(".cards");
+  constructor(els, offset){
+    this.cards = els;
+    this.offsetPercent = offset;
     this.hideInitially();
     this.newsWaypoints();
   }
@@ -13,6 +14,7 @@ class WayPoints{
   }
 
   newsWaypoints(){
+    var that = this;
     this.cards.each(function(){
       let currentCard = this;
       new Waypoint({
@@ -20,7 +22,7 @@ class WayPoints{
         handler: function(){
           $(currentCard).addClass("reveal-items--revealed");
         },
-        offset: "80%"
+        offset: that.offsetPercent
       });
     });
   }

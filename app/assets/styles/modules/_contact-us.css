@@ -4,6 +4,28 @@
   max-width: 1437px;
   margin: 0 auto;
 
+  &__first{
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+
+    &.left{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__second{
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+
+    &.right{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   @mixin atLarge{
     padding-top: 4.5rem;
   }

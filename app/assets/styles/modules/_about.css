@@ -11,6 +11,12 @@
   &__image{
     margin-top: 2.5rem;
     width: 100%;
+    margin-left: -18rem;
+    transition: all .5s ease-out;
+
+    &.slideRight{
+      margin-left: 0;
+    }
   }
 
   &__image--mb{
@@ -21,4 +27,12 @@
     }
   }
 
+  &__text{
+    transform: translateX(450px);
+    transition: all .3s ease-out;
+
+    &.scaleUp{
+      transform: translateX(0);
+    }
+  }
 }
