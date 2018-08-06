@@ -75,11 +75,14 @@
   }
 
   &__description--mt{
-    margin-top: 2.625rem;
   }
 
   &--mt-until-large{
     margin-top: 1.5rem;
+
+    @mixin atMedium{
+      margin-top: 4.5rem;
+    }
 
     @mixin atLarge{
       margin-top: 0;

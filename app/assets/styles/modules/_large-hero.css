@@ -40,16 +40,30 @@
     @mixin atMedium{
       position: absolute;
       display: block;
-      left: 1.125rem;
+      left: -15.125rem;
       bottom: 5rem;
       max-width: 25.75rem;
+      background-color: rgba($lightGray, .45);
+      padding-top: 40px;
+      transition: all .3s ease-out;
+
+      &.slideIn{
+        left: 1.125rem;
+      }
     }
 
     @mixin atLarge{
       background-color: rgba($lightGray, .45);
-      left: 6.25rem;
+      left: -18.25rem;
       bottom: 8.25rem;
       padding-top: 50px;
+      transition: all .3s ease-out;
+
+      &.slideIn{
+        @mixin atLarge{
+          left: 6.25rem;
+        }
+      }
     }
   }
 

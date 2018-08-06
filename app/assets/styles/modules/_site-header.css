@@ -16,6 +16,11 @@
   &__logo{
     display: none;
 
+    & a {
+      color: #fff;
+      text-decoration: none;
+    }
+
     @mixin atLarge{
       display: inline-block;
       position: absolute;

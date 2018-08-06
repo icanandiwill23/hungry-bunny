@@ -94,10 +94,6 @@
     }
 
     .cards:hover &{
-
-    }
-
-    .cards:hover &{
       background-color: $mainYellow;
       color: #333;
     }
