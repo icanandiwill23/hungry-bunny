@@ -41,7 +41,7 @@
 
   &__header{
     text-align: center;
-    background: url("/assets/images/services-header-bg.jpg") top left no-repeat;
+    background: url("../../assets/images/services-header-bg.jpg") top left no-repeat;
     background-size: cover;
     height: 11rem;
     position: relative;
