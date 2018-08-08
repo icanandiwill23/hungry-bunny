@@ -7,21 +7,14 @@
     <title>Home - Hungry Bunny</title>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <!-- build:css assets/fonts/fonts.min.css -->
-    <link rel="stylesheet" href="assets/fonts/fonts.min.css">
-    <!-- endbuild -->
-    <!-- build:css assets/styles/styles.css -->
-    <link rel="stylesheet" href="temp/styles/styles.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/fonts/fonts-d41d8cd98f.min.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-3ca2444037.css"/>
   </head>
   <body>
     <div class="container container--no-padding-until-extra-large">
       <header class="site-header">
         <div class="site-header__logo">
-          <!-- <div class="site-header__image">
-          Hungry Bunny
-          </div> -->
+          <!-- <img class="site-header__image" src="assets/images/hb_logo.jpg" alt="Hungry Bunny Mascot"> -->
           <div class="site-info__logo">
             <a href="index.html">
               <img class="site-info__image" src="assets/images/hb_logo.jpg" alt="Hungry Bunny Mascot">
@@ -43,71 +36,107 @@
         <div class="site-header__menu-content">
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="menu.html">Menu</a></li>
               <li><a href="services.html">Services</a></li>
-              <li class="active"><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </nav>
         </div>
       </header>
     </div>
 
-    <section class="contact-us page-section">
-      <div class="container">
-        <h2 class="section-title section-title--uppercase">Contact Us</h2>
-
-        <div class="row row--gutters">
-          <div class="row__lg-6 contact-us__first">
-            <h2 class="contact-us__title">Your feedback matters <i class="fa fa-comments-o"></i></h2>
-
-            <form class="form form--relative" action="#" method="post">
-              <input class="form__input" type="text" name="customer_name" placeholder="Name">
-
-              <input class="form__input" type="text" name="customer_email" placeholder="Email">
-
-              <textarea class="form__textarea" name="customer_msg" rows="8" cols="80" placeholder="Message"></textarea>
-
-              <div class="form__send">
-                <a class="btn--send" href="#send">Send</a>
-              </div>
-
-              <p class="form__feedback">Message sent successfully</p>
-            </form>
+    <section class="large-hero">
+      <div class="container container--no-padding-until-extra-large">
+        <div class="large-hero__inner-container">
+          <picture class="large-hero__image-parent">
+            <source srcset="assets/images/hero-large.jpg 1399w" media="(min-width: 772px)">
+            <source srcset="assets/images/large-hero-medium.jpg 772w, assets/images/large-hero-medium-hi-dpi.jpg 1544w" media="(min-width: 375px)">
+            <img class="large-hero__image" srcset="assets/images/large-hero-small.jpg 375w, assets/images/large-hero-small-hi-dpi.jpg 744w" alt="Super Bunny Burger">
+          </picture>
+          <div class="large-hero__container">
+            <h1 class="large-hero__title">Hungry?</h1>
+            <p class="large-hero__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero ratione ipsum excepturi tenetur eveniet. Commodi quam quo consequuntur doloribus.</p>
+            <a class="btn--red" href="#">Order Now</a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="row__lg-6 contact-us__second">
-            <h2 class="contact-us__title">Be part of our growing family <i class="fa fa-users"></i></h2>
+    <section class="news page-section">
+      <div class="container container--no-padding-until-large">
+        <h1 class="section-title">News and Promotions</h1>
+        <h3 class="section-title__subtitle section-title__subtitle--red">Special treat to our valued customers</h3>
 
-            <div class="row">
-              <div class="row__lg-6">
-                <div class="contact-us__items">
-                  <img src="/assets/images/suitcase.jpg" alt="">
-
-                  <h2 class="contact-us__items-title">Career</h2>
-                  <p class="contact-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati repellendus neque iure. Dicta, ex.</p>
-
-                  <p class="contact-us__email-text">Please send your email at:</p>
-                  <p class="contact-us__email">hrd@hungrybunny.com.sa</p>
-                </div>
+        <div class="row row--gutters-small news--padding">
+          <div class="row__lg-6 row__md-6">
+            <div class="cards">
+              <div class="cards__body">
+                <h2 class="cards__title">Buy 1 Get 1 Free</h2>
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem, tempora dolore numquam ipsum perspiciatis.</p>
+                <a class="btn--link" href="#readmore">Read more</a>
               </div>
 
-              <div class="row__lg-6">
-                <div class="contact-us__items">
-                  <img class="contact-us__items-franchise" src="/assets/images/hungry-bunny-store.jpg" alt="">
-
-                  <h2 class="contact-us__items-title">Franchise</h2>
-                  <p class="contact-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati repellendus neque iure. Dicta, ex.</p>
-
-                  <p class="contact-us__email-text">For inquiries please call:</p>
-                  <p class="contact-us__email">013-808094</p>
+              <div class="cards__image">
+                <img src="assets/images/news-product.jpg" alt="Chicken Rocca">
+                <div class="cards__date">
+                  <h2>22</h2>
+                  <p>June</p>
                 </div>
+              </div>
+            </div>
 
+            <div class="cards">
+              <div class="cards__body">
+                <h2 class="cards__title">Buy 1 Get 1 Free</h2>
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem, tempora dolore numquam ipsum perspiciatis.</p>
+                <a class="btn--link" href="#readmore">Read more</a>
+              </div>
+
+              <div class="cards__image">
+                <img src="assets/images/news-product.jpg" alt="Chicken Rocca">
+                <div class="cards__date">
+                  <h2>22</h2>
+                  <p>June</p>
+                </div>
               </div>
             </div>
           </div>
 
+          <div class="row__lg-6 row__md-6">
+            <div class="cards">
+              <div class="cards__body">
+                <h2 class="cards__title">Buy 1 Get 1 Free</h2>
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem, tempora dolore numquam ipsum perspiciatis.</p>
+                <a class="btn--link" href="#readmore">Read more</a>
+              </div>
+
+              <div class="cards__image">
+                <img src="assets/images/news-product.jpg" alt="Chicken Rocca">
+                <div class="cards__date">
+                  <h2>22</h2>
+                  <p>June</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards__body">
+                <h2 class="cards__title">Buy 1 Get 1 Free</h2>
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem, tempora dolore numquam ipsum perspiciatis.</p>
+                <a class="btn--link" href="#readmore">Read more</a>
+              </div>
+
+              <div class="cards__image">
+                <img src="assets/images/news-product.jpg" alt="Chicken Rocca">
+                <div class="cards__date">
+                  <h2>22</h2>
+                  <p>June</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -219,8 +248,6 @@
       </div>
     </footer>
 
-  <!-- build:js assets/scripts/App.js -->
-  <script src="temp/scripts/App.js" charset="utf-8"></script>
-  <!-- endbuild -->
+  <script src="assets/scripts/App-d8e5b3a183.js"></script>
   </body>
 </html>

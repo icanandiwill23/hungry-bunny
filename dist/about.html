@@ -8,20 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <!-- build:css assets/fonts/fonts.min.css -->
-    <link rel="stylesheet" href="assets/fonts/fonts.min.css">
-    <!-- endbuild -->
-    <!-- build:css assets/styles/styles.css -->
-    <link rel="stylesheet" href="temp/styles/styles.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/fonts/fonts-d41d8cd98f.min.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-3ca2444037.css"/>
   </head>
   <body>
     <div class="container container--no-padding-until-extra-large">
       <header class="site-header">
         <div class="site-header__logo">
-          <!-- <div class="site-header__image">
-          Hungry Bunny
-          </div> -->
+          <!-- <img class="site-header__image" src="assets/images/hb_logo.jpg" alt="Hungry Bunny Mascot"> -->
           <div class="site-info__logo">
             <a href="index.html">
               <img class="site-info__image" src="assets/images/hb_logo.jpg" alt="Hungry Bunny Mascot">
@@ -44,71 +38,41 @@
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
+              <li class="active"><a href="about.html">About Us</a></li>
               <li><a href="menu.html">Menu</a></li>
               <li><a href="services.html">Services</a></li>
-              <li class="active"><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </nav>
         </div>
       </header>
     </div>
 
-    <section class="contact-us page-section">
+    <section class="about page-section">
       <div class="container">
-        <h2 class="section-title section-title--uppercase">Contact Us</h2>
+        <h1 class="section-title section-title--uppercase">About Us</h1>
 
-        <div class="row row--gutters">
-          <div class="row__lg-6 contact-us__first">
-            <h2 class="contact-us__title">Your feedback matters <i class="fa fa-comments-o"></i></h2>
-
-            <form class="form form--relative" action="#" method="post">
-              <input class="form__input" type="text" name="customer_name" placeholder="Name">
-
-              <input class="form__input" type="text" name="customer_email" placeholder="Email">
-
-              <textarea class="form__textarea" name="customer_msg" rows="8" cols="80" placeholder="Message"></textarea>
-
-              <div class="form__send">
-                <a class="btn--send" href="#send">Send</a>
-              </div>
-
-              <p class="form__feedback">Message sent successfully</p>
-            </form>
+        <div class="row row--gutters row--tp-medium">
+          <div class="row__lg-4 row__lg-4-larger">
+            <img class="about__image about__image--mb" src="assets/images/hungry-bunny-store.png" alt="Hungry Bunny Store">
           </div>
 
-          <div class="row__lg-6 contact-us__second">
-            <h2 class="contact-us__title">Be part of our growing family <i class="fa fa-users"></i></h2>
+          <div class="row__lg-8 row__lg-8-smaller generic-content">
+            <div class="about__text">
+              <p>In 1987, Hungry Bunny™ started its first restaurant in Dammam, Kingdom of Saudi Arabia. It is owned and operated by Mr. Mohammad Al-Dossary, a reputed Saudi businessman.
+      The restaurant was well received by customers, that another restaurant was opened two years after. Since then, the company has grown to what it is now with a number of branches all over the Kingdom of Saudi Arabia. The company’s goals are clear and shared by all the staff who are team members. </p>
 
-            <div class="row">
-              <div class="row__lg-6">
-                <div class="contact-us__items">
-                  <img src="/assets/images/suitcase.jpg" alt="">
+              <p>They represent our biggest asset and  trained to meet the standards of Customer Satisfaction at a ll times. Our modest success has been due to a clear vision based on stratgic planning, timely execution and extreme determination to perform the best ser vice at all times in all areas.</p>
 
-                  <h2 class="contact-us__items-title">Career</h2>
-                  <p class="contact-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati repellendus neque iure. Dicta, ex.</p>
+              <p>Currently, Hungry Bunny™ has grown to over 32 stores around the Kingdom of Saudi Arabia, as well as having a fran meals at its very affordable prices offering great value for money. We got it right since 1987 which has made our Hungry  Bunny™ brand a household name in Saudi Arabia and is continuing to make its mark in other countries.</p>
 
-                  <p class="contact-us__email-text">Please send your email at:</p>
-                  <p class="contact-us__email">hrd@hungrybunny.com.sa</p>
-                </div>
-              </div>
+              <p>Our emphasis has always been on “quality and freshness” in all our products which customers enjoy every time. It is always a great experience when you dine in our restaurants, a place with tastefully done interiors and design.</p>
 
-              <div class="row__lg-6">
-                <div class="contact-us__items">
-                  <img class="contact-us__items-franchise" src="/assets/images/hungry-bunny-store.jpg" alt="">
-
-                  <h2 class="contact-us__items-title">Franchise</h2>
-                  <p class="contact-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati repellendus neque iure. Dicta, ex.</p>
-
-                  <p class="contact-us__email-text">For inquiries please call:</p>
-                  <p class="contact-us__email">013-808094</p>
-                </div>
-
-              </div>
+              <p>Everything we did was to consider our valued customers, making them our priority every day. </p>
             </div>
           </div>
-
         </div>
+
       </div>
     </section>
 
@@ -116,7 +80,7 @@
       <div class="site-info__inner page-section page-section--info-bg">
         <div class="container">
           <h2 class="section-title section-title--white">We will satisfy your cravings</h2>
-          <h3 class="section-title__subtitle section-title--white">Have a seat, we're pleased to serve you</h3>
+          <h3 class="section-title__subtitle">Have a seat, we're pleased to serve you</h3>
 
           <div class="row row--tp-large row--bp-large">
             <div class="row__lg-3 row__md-6">
@@ -219,8 +183,6 @@
       </div>
     </footer>
 
-  <!-- build:js assets/scripts/App.js -->
-  <script src="temp/scripts/App.js" charset="utf-8"></script>
-  <!-- endbuild -->
+  <script src="assets/scripts/App-d8e5b3a183.js"></script>
   </body>
 </html>

@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home - Hungry Bunny</title>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <!-- build:css assets/fonts/fonts.min.css -->
-    <link rel="stylesheet" href="assets/fonts/fonts.min.css">
-    <!-- endbuild -->
-    <!-- build:css assets/styles/styles.css -->
-    <link rel="stylesheet" href="temp/styles/styles.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/fonts/fonts-d41d8cd98f.min.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-3ca2444037.css"/>
   </head>
   <body>
     <div class="container container--no-padding-until-extra-large">
@@ -45,69 +44,89 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="menu.html">Menu</a></li>
+              <li class="active"><a href="menu.html">Menu</a></li>
               <li><a href="services.html">Services</a></li>
-              <li class="active"><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </nav>
         </div>
       </header>
     </div>
 
-    <section class="contact-us page-section">
+    <section class="menu page-section">
       <div class="container">
-        <h2 class="section-title section-title--uppercase">Contact Us</h2>
+        <h1 class="section-title section-title--uppercase">Menu</h1>
+        <h3 class="section-title__subtitle section-title__subtitle--red">Collection of freshly made-to-order meals</h3>
 
-        <div class="row row--gutters">
-          <div class="row__lg-6 contact-us__first">
-            <h2 class="contact-us__title">Your feedback matters <i class="fa fa-comments-o"></i></h2>
+        <div class="menu__content">
+          <div class="menu-item">
+            <div class="menu-item__image">
+              <img src="assets/images/cordon-blue.jpg" alt="">
+            </div>
 
-            <form class="form form--relative" action="#" method="post">
-              <input class="form__input" type="text" name="customer_name" placeholder="Name">
-
-              <input class="form__input" type="text" name="customer_email" placeholder="Email">
-
-              <textarea class="form__textarea" name="customer_msg" rows="8" cols="80" placeholder="Message"></textarea>
-
-              <div class="form__send">
-                <a class="btn--send" href="#send">Send</a>
-              </div>
-
-              <p class="form__feedback">Message sent successfully</p>
-            </form>
-          </div>
-
-          <div class="row__lg-6 contact-us__second">
-            <h2 class="contact-us__title">Be part of our growing family <i class="fa fa-users"></i></h2>
-
-            <div class="row">
-              <div class="row__lg-6">
-                <div class="contact-us__items">
-                  <img src="/assets/images/suitcase.jpg" alt="">
-
-                  <h2 class="contact-us__items-title">Career</h2>
-                  <p class="contact-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati repellendus neque iure. Dicta, ex.</p>
-
-                  <p class="contact-us__email-text">Please send your email at:</p>
-                  <p class="contact-us__email">hrd@hungrybunny.com.sa</p>
-                </div>
-              </div>
-
-              <div class="row__lg-6">
-                <div class="contact-us__items">
-                  <img class="contact-us__items-franchise" src="/assets/images/hungry-bunny-store.jpg" alt="">
-
-                  <h2 class="contact-us__items-title">Franchise</h2>
-                  <p class="contact-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati repellendus neque iure. Dicta, ex.</p>
-
-                  <p class="contact-us__email-text">For inquiries please call:</p>
-                  <p class="contact-us__email">013-808094</p>
-                </div>
-
-              </div>
+            <div class="menu-item__text">
+              <h2 class="menu-item__title">Cordon Bleu Meal</h2>
+              <p class="menu-item__price">24<span class="menu-item__currency">SR</span></p>
             </div>
           </div>
 
+          <div class="menu-item">
+            <div class="menu-item__image">
+              <img src="assets/images/cordon-blue.jpg" alt="">
+            </div>
+
+            <div class="menu-item__text">
+              <h2 class="menu-item__title">Cordon Bleu Meal</h2>
+              <p class="menu-item__price">24<span class="menu-item__currency">SR</span></p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__image">
+              <img src="assets/images/cordon-blue.jpg" alt="">
+            </div>
+
+            <div class="menu-item__text">
+              <h2 class="menu-item__title">Cordon Bleu Meal</h2>
+              <p class="menu-item__price">24<span class="menu-item__currency">SR</span></p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__image">
+              <img src="assets/images/cordon-blue.jpg" alt="">
+            </div>
+
+            <div class="menu-item__text">
+              <h2 class="menu-item__title">Cordon Bleu Meal</h2>
+              <p class="menu-item__price">24<span class="menu-item__currency">SR</span></p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__image">
+              <img src="assets/images/cordon-blue.jpg" alt="">
+            </div>
+
+            <div class="menu-item__text">
+              <h2 class="menu-item__title">Cordon Bleu Meal</h2>
+              <p class="menu-item__price">24<span class="menu-item__currency">SR</span></p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__image">
+              <img src="assets/images/cordon-blue.jpg" alt="">
+            </div>
+
+            <div class="menu-item__text">
+              <h2 class="menu-item__title">Cordon Bleu Meal</h2>
+              <p class="menu-item__price">24<span class="menu-item__currency">SR</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="menu__pricelist">
+          <a href="#pricelist" class="btn--red btn--larger "><i class="fa fa-money"></i> Price List</a>
         </div>
       </div>
     </section>
@@ -219,8 +238,6 @@
       </div>
     </footer>
 
-  <!-- build:js assets/scripts/App.js -->
-  <script src="temp/scripts/App.js" charset="utf-8"></script>
-  <!-- endbuild -->
+  <script src="assets/scripts/App-d8e5b3a183.js"></script>
   </body>
 </html>
