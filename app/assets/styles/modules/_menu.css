@@ -2,12 +2,20 @@
   background-color: rgba($lighterGray, .5);
   max-width: 1437px;
   margin: 0 auto;
+  padding-top: 8.7rem;
+
+  @mixin atLarge{
+    padding-top: 4.5rem;
+  }
 
   &__content{
     padding: 52px 0 90px 0;
     position: relative;
   }
 
+  &__pricelist{
+    text-align: right;
+  }
 }
 
 .menu-item{
@@ -15,6 +23,7 @@
   border: 1px solid $lightGray;
   position: relative;
   width: 290px;
+  padding-right: 10px;
 
   &__image{
 
