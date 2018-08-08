@@ -9,7 +9,7 @@
     background: linear-gradient(#730000 0%, #a60000 100%, #bf0019 100%);
 
     @mixin atLarge{
-      background: url("/assets/images/site-info-bg.jpg") no-repeat left center;
+      background: url("../../assets/images/site-info-bg.jpg") no-repeat left center;
       background-attachment: fixed;
       background-size: cover;
     }
@@ -21,7 +21,7 @@
     margin: 0 auto;
 
     @mixin atLarge{
-      background: url("/assets/images/service-bg.jpg") no-repeat left center;
+      background: url("../../assets/images/service-bg.jpg") no-repeat left center;
       background-size: cover;
     }
   }

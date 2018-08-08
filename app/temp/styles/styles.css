@@ -897,7 +897,7 @@ img {
 @media (min-width: 992px){
 
 .page-section--info-bg{
-      background: url("/assets/images/site-info-bg.jpg") no-repeat left center;
+      background: url("../../assets/images/site-info-bg.jpg") no-repeat left center;
       background-attachment: fixed;
       background-size: cover
   }
@@ -912,7 +912,7 @@ img {
 @media (min-width: 992px){
 
 .page-section--services-bg{
-      background: url("/assets/images/service-bg.jpg") no-repeat left center;
+      background: url("../../assets/images/service-bg.jpg") no-repeat left center;
       background-size: cover
   }
   }

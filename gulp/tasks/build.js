@@ -8,16 +8,16 @@ const gulp     = require("gulp"),
       rev = require("gulp-rev"),
       browserSync = require("browser-sync").create();
 
-gulp.task("previewDist", function(){
+gulp.task("previewDocs", function(){
   browserSync.init({
     server: {
-      baseDir: "dist"
+      baseDir: "docs"
     }
   });
 });
 
 gulp.task("del", function(){
-  del("./dist");
+  del("./docs");
 });
 
 gulp.task("generalFiles", ["del"], function(){
@@ -33,7 +33,7 @@ gulp.task("generalFiles", ["del"], function(){
   ];
 
   return gulp.src(paths)
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("./docs"));
 });
 
 gulp.task("optimizeImages", ["del"], function(){
@@ -49,7 +49,7 @@ gulp.task("optimizeImages", ["del"], function(){
         ]
       })
     ]))
-    .pipe(gulp.dest("./dist/assets/images"));
+    .pipe(gulp.dest("./docs/assets/images"));
 });
 
 gulp.task("useminTrigger", ["del"], function(){
@@ -63,7 +63,7 @@ gulp.task("usemin", ["styles", "scripts"], function(){
       htmlmin: [ htmlmin({ collapseWhitespace: true }) ],
       js: [function(){ return uglify() }, function(){ return rev() }]
     }))
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("./docs"));
 });
 
 gulp.task("build", ["del", "generalFiles", "optimizeImages", "useminTrigger"]);

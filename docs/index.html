@@ -7,17 +7,14 @@
     <title>Home - Hungry Bunny</title>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
     <link rel="stylesheet" href="assets/fonts/fonts-d41d8cd98f.min.css"/>
-    <link rel="stylesheet" href="assets/styles/styles-3ca2444037.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-248e9a3c15.css"/>
   </head>
   <body>
     <div class="container container--no-padding-until-extra-large">
       <header class="site-header">
         <div class="site-header__logo">
-          <!-- <div class="site-header__image">
-          Hungry Bunny
-          </div> -->
+          <!-- <img class="site-header__image" src="assets/images/hb_logo.jpg" alt="Hungry Bunny Mascot"> -->
           <div class="site-info__logo">
             <a href="index.html">
               <img class="site-info__image" src="assets/images/hb_logo.jpg" alt="Hungry Bunny Mascot">
@@ -39,10 +36,10 @@
         <div class="site-header__menu-content">
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="menu.html">Menu</a></li>
-              <li class="active"><a href="services.html">Services</a></li>
+              <li><a href="services.html">Services</a></li>
               <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </nav>
@@ -50,95 +47,98 @@
       </header>
     </div>
 
-    <section class="services page-section page-section--services-bg">
-      <div class="container">
-        <h2 class="section-title section-title--uppercase section-title--white">Services</h2>
+    <section class="large-hero">
+      <div class="container container--no-padding-until-extra-large">
+        <div class="large-hero__inner-container">
+          <picture class="large-hero__image-parent">
+            <source srcset="assets/images/hero-large.jpg 1399w" media="(min-width: 772px)">
+            <source srcset="assets/images/large-hero-medium.jpg 772w, assets/images/large-hero-medium-hi-dpi.jpg 1544w" media="(min-width: 375px)">
+            <img class="large-hero__image" srcset="assets/images/large-hero-small.jpg 375w, assets/images/large-hero-small-hi-dpi.jpg 744w" alt="Super Bunny Burger">
+          </picture>
+          <div class="large-hero__container">
+            <h1 class="large-hero__title">Hungry?</h1>
+            <p class="large-hero__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero ratione ipsum excepturi tenetur eveniet. Commodi quam quo consequuntur doloribus.</p>
+            <a class="btn--red" href="#">Order Now</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="container container--no-padding-until-larger">
-        <div class="row row--tp-larger row--gutters-large row--equal-height-on-large">
-          <div class="row__lg-4">
-            <div class="services-item">
-              <div class="services-item__header">
-                <h2 class="services-item__title"><i class="fa fa-gift fa-2x"></i> Birthdays and Special Occasions</h2>
+    <section class="news page-section">
+      <div class="container container--no-padding-until-large">
+        <h1 class="section-title">News and Promotions</h1>
+        <h3 class="section-title__subtitle section-title__subtitle--red">Special treat to our valued customers</h3>
+
+        <div class="row row--gutters-small news--padding">
+          <div class="row__lg-6 row__md-6">
+            <div class="cards">
+              <div class="cards__body">
+                <h2 class="cards__title">Buy 1 Get 1 Free</h2>
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem, tempora dolore numquam ipsum perspiciatis.</p>
+                <a class="btn--link" href="#readmore">Read more</a>
               </div>
 
-              <div class="services-item__body">
-                <h3 class="services-item__call">For assitance call:</h3>
-                <h2 class="services-item__number">013-8080924</h2>
+              <div class="cards__image">
+                <img src="assets/images/news-product.jpg" alt="Chicken Rocca">
+                <div class="cards__date">
+                  <h2>22</h2>
+                  <p>June</p>
+                </div>
+              </div>
+            </div>
 
-                <p class="services-item__text">Celebrate your child's birthday with Hungry Bunny&trade; family. it is always a great experience to share the joy, sit down together as a family and celebrate.</p>
+            <div class="cards">
+              <div class="cards__body">
+                <h2 class="cards__title">Buy 1 Get 1 Free</h2>
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem, tempora dolore numquam ipsum perspiciatis.</p>
+                <a class="btn--link" href="#readmore">Read more</a>
               </div>
 
-              <h2 class="services-item__divider">Package Includes</h2>
-
-              <div class="services-item__footer">
-                <ul>
-                  <li><i class="fa fa-check"></i> Fun Kids Games</li>
-                  <li><i class="fa fa-check"></i> Original fun activities</li>
-                  <li><i class="fa fa-check"></i> Your favorite mascots appearance</li>
-                  <li><i class="fa fa-check"></i> Face painting</li>
-                  <li><i class="fa fa-check"></i> Prizes</li>
-                </ul>
+              <div class="cards__image">
+                <img src="assets/images/news-product.jpg" alt="Chicken Rocca">
+                <div class="cards__date">
+                  <h2>22</h2>
+                  <p>June</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="row__lg-4 row--no-flex">
-            <div class="services-item services-item--adjust-top">
-              <div class="services-item__header">
-                <h2 class="services-item__title"><i class="fa fa-home fa-2x"></i> Home Delivery</h2>
+          <div class="row__lg-6 row__md-6">
+            <div class="cards">
+              <div class="cards__body">
+                <h2 class="cards__title">Buy 1 Get 1 Free</h2>
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem, tempora dolore numquam ipsum perspiciatis.</p>
+                <a class="btn--link" href="#readmore">Read more</a>
               </div>
 
-              <div class="services-item__body">
-                <h3 class="services-item__call">For assitance call:</h3>
-                <h2 class="services-item__number">013-8080924</h2>
-
-                <p class="services-item__text">Hungry Bunny&trade; delovery service will enable you to relish our tasty meals in the controls of your own home, delivered at your doorstep, hot and fresh all the time.</p>
-              </div>
-
-              <h2 class="services-item__divider">Package Includes</h2>
-
-              <div class="services-item__footer">
-                <ul>
-                  <li><i class="fa fa-check"></i> Food Quality</li>
-                  <li><i class="fa fa-check"></i> Freshness</li>
-                  <li><i class="fa fa-check"></i> Fix Delivery Charge</li>
-                  <li><i class="fa fa-check"></i> 45 mins. waiting time</li>
-                </ul>
+              <div class="cards__image">
+                <img src="assets/images/news-product.jpg" alt="Chicken Rocca">
+                <div class="cards__date">
+                  <h2>22</h2>
+                  <p>June</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="row__lg-4">
-            <div class="services-item services-item--last">
-              <div class="services-item__header">
-                <h2 class="services-item__title"><i class="fa fa-gift fa-2x"></i> Kids Play Area</h2>
+            <div class="cards">
+              <div class="cards__body">
+                <h2 class="cards__title">Buy 1 Get 1 Free</h2>
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quidem, tempora dolore numquam ipsum perspiciatis.</p>
+                <a class="btn--link" href="#readmore">Read more</a>
               </div>
 
-              <div class="services-item__body">
-                <h3 class="services-item__call">For assitance call:</h3>
-                <h2 class="services-item__number">013-8080924</h2>
-
-                <p class="services-item__text">A place specially designed for your children to play and make new friends. Child friendly and safe environment</p>
-              </div>
-
-              <h2 class="services-item__divider">Package Includes</h2>
-
-              <div class="services-item__footer">
-                <ul>
-                  <li><i class="fa fa-check"></i> Security</li>
-                  <li><i class="fa fa-check"></i> Unlimited Time</li>
-                  <li><i class="fa fa-check"></i> Free for Kids</li>
-                  <li><i class="fa fa-check"></i> Playing Equipments</li>
-                  <li><i class="fa fa-check"></i> Games</li>
-                </ul>
+              <div class="cards__image">
+                <img src="assets/images/news-product.jpg" alt="Chicken Rocca">
+                <div class="cards__date">
+                  <h2>22</h2>
+                  <p>June</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
 
     <section class="site-info">
